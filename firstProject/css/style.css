@@ -52,6 +52,11 @@ body {
           flex: 1 1 auto;
 }
 
+.header__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .navigation_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +102,7 @@ button:hover {
   padding-top: 100px;
 }
 
-.section__box {
+.section__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +317,7 @@ purple {
   color: rgb(197, 191, 237);
 }
 
-.application__box {
+.application__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
