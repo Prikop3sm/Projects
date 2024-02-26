@@ -161,9 +161,12 @@ purple {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: -10px 5px 5px rgba(70, 70, 70, 0.05);
-  right: 0;
-  top: 0;
   padding: 10px 10px 0 10px;
+}
+
+.right_card {
+  right: -80px;
+  top: -70px;
 }
 
 .card img {
@@ -208,6 +211,7 @@ purple {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0px;
+  color: rgba(172, 173, 185, 1);
 }
 
 .card_background {
@@ -317,4 +321,88 @@ purple {
 
 .restaurants_list {
   display: flex;
+  justify-content: space-between;
+}
+
+.restaurants_list_item {
+  display: flex;
+  flex-direction: column;
+  width: 395.99px;
+  height: 297.6px;
+  border-radius: 30.02px;
+  border: 1.25px;
+  gap: 10px;
+}
+
+.restaurants_list_item img {
+  max-width: 395px;
+  max-height: 195px;
+}
+
+.item_information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item_information_highlight {
+  display: block;
+  width: 74.1px;
+  height: 24.29px;
+  border-radius: 5.4px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.healthy {
+  background-color: rgb(255, 236, 187);
+  color: rgba(218, 163, 26, 1);
+}
+
+.trending {
+  background-color: rgb(255, 181, 164);
+  color: rgba(251, 71, 29, 1);
+}
+
+.item_information_name {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(50, 49, 66, 1);
+}
+
+.item_information_details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.details_time {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(142, 151, 166, 1);
+}
+
+.details_rating {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(142, 151, 166, 1);
+}
+
+.favorite {
+  width: 40.09px;
+  height: 40.09px;
+  position: relative;
+  left: 200px;
+  bottom: 10px;
 }
