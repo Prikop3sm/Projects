@@ -410,6 +410,8 @@ purple {
   border-radius: 30.02px;
   border: 1.25px;
   gap: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1.25px solid rgb(244, 244, 246);
 }
 
 .restaurants_list_item img {
@@ -492,4 +494,125 @@ purple {
   position: relative;
   left: 200px;
   bottom: 10px;
+}
+
+.restaurants_bottom {
+  padding-top: 65px;
+  text-align: end;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 45px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.restaurants_bottom a {
+  text-decoration: none;
+}
+
+.restaurants_bottom_text {
+  color: rgb(172, 173, 185);
+  text-decoration: none;
+}
+
+.dishes {
+  padding-top: 100px;
+}
+
+.dishes_header {
+  text-align: center;
+}
+
+.dishes_title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.dishes_main {
+  padding-top: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dishes_main img {
+  max-width: 185px;
+  max-height: 185px;
+}
+
+.dishes_main_item {
+  max-width: 224.63px;
+  max-height: 390.36px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 15px;
+  border-radius: 30px;
+  -webkit-box-shadow: 6.8484177589px 82.1810150146px 41.0905075073px 0px rgba(229, 229, 229, 0.7);
+          box-shadow: 6.8484177589px 82.1810150146px 41.0905075073px 0px rgba(229, 229, 229, 0.7);
+}
+
+.item_highlight {
+  display: block;
+  width: 74.1px;
+  height: 24.29px;
+  border-radius: 5.4px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.supreme {
+  color: rgb(48, 157, 91);
+  background-color: rgb(181, 255, 211);
+}
+
+.dishes_item_name {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(50, 49, 66);
+}
+
+.dishes_item_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dishes_item_details img {
+  max-width: 24px;
+  max-height: 23px;
+}
+
+.dishes_details_time {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(142, 151, 166);
+}
+
+.dishes_details_rating {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(142, 151, 166);
+}
+
+.add_button {
+  max-width: 45px;
+  max-height: 40px;
+  position: relative;
+  left: 75px;
 }
