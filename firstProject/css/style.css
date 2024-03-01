@@ -800,3 +800,9 @@ purple {
   text-align: right;
   color: rgb(26, 32, 44);
 }
+
+#yellow_form {
+  position: relative;
+  top: 10px;
+  width: 400px;
+}
