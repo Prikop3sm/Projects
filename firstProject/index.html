@@ -13,34 +13,38 @@
   </head>
 
   <body>
-    <header class="container">
+    <header>
       <div class="header">
-        <div class="header__logo">
-          <img src="/firstProject/images/Logo.svg" alt="eatlyLogo" />
-          <span class="logo_text">eatly</span>
-        </div>
-        <nav class="header__navigation">
-          <ul class="navigation_buttons">
-            <a href="#" class="header__link">
-              <li>Menu</li>
-            </a>
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <img src="/firstProject/images/Logo.svg" alt="eatlyLogo" />
+              <span class="logo_text">eatly</span>
+            </div>
+            <nav class="header__navigation">
+              <ul class="navigation_buttons">
+                <a href="#" class="header__link">
+                  <li>Menu</li>
+                </a>
 
-            <a href="#" class="header__link">
-              <li>Blog</li>
-            </a>
+                <a href="#" class="header__link">
+                  <li>Blog</li>
+                </a>
 
-            <a href="#" class="header__link">
-              <li>Pricing</li>
-            </a>
+                <a href="#" class="header__link">
+                  <li>Pricing</li>
+                </a>
 
-            <a href="#" class="header__link">
-              <li>Contacts</li>
-            </a>
-          </ul>
-        </nav>
-        <div class="header__registration">
-          <button class="whiteButton">Login</button>
-          <button class="purpleButton">Sign Up</button>
+                <a href="#" class="header__link">
+                  <li>Contacts</li>
+                </a>
+              </ul>
+            </nav>
+            <div class="header__registration">
+              <button class="whiteButton">Login</button>
+              <button class="purpleButton">Sign Up</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -427,38 +431,83 @@
                   </select>
                 </div>
                 <div class="right_information_main">
-                  <div class="right_information_main_item">
-                    <img
-                      src="/firstProject/images/purpleIcon.svg"
-                      alt="purple icon"
-                    />
-                    <div class="right_information_main_item_left">
-                      <span class="item_left_title">Expense</span>
-                      <span class="item_left_subtitle">Increased By 10%</span>
+                  <div class="item_wrapper">
+                    <div class="right_information_main_item">
+                      <img
+                        src="/firstProject/images/purpleIcon.svg"
+                        alt="purple icon"
+                      />
+                      <div class="right_information_main_item_left">
+                        <span class="item_left_title">Expense</span>
+                        <span class="item_left_subtitle">Increased By 10%</span>
+                      </div>
+                      <div class="right_information_main_item_right">
+                        <span class="item_right_price">$409.00</span>
+                      </div>
                     </div>
-                    <div class="right_information_main_item_right">
-                      <span class="item_right_price">$409.00</span>
+                    <div id="purple_form">
+                      <div id="purple_fill"></div>
                     </div>
                   </div>
 
-                  <div class="right_information_main_item">
-                    <img
-                      src="/firstProject/images/greenIcon.svg"
-                      alt="green icon"
-                    />
-                    <div class="right_information_main_item_left">
-                      <span class="item_left_title">Vocher Usage</span>
-                      <span class="item_left_subtitle">Increased By 5%</span>
+                  <div class="item_wrapper">
+                    <div class="right_information_main_item">
                       <img
-                        src="/firstProject/images/yellow form.svg"
-                        alt=""
-                        id="yellow_form"
+                        src="/firstProject/images/greenIcon.svg"
+                        alt="green icon"
                       />
+                      <div class="right_information_main_item_left">
+                        <span class="item_left_title">Vocher Usage</span>
+                        <span class="item_left_subtitle">Increased By 5%</span>
+                      </div>
+                      <div class="right_information_main_item_right">
+                        <span class="item_right_price">$45.78</span>
+                      </div>
                     </div>
-                    <div class="right_information_main_item_right">
-                      <span class="item_right_price">$45.78</span>
+                    <div id="yellow_form">
+                      <div id="yellow_fill"></div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer">
+      <div class="container">
+        <div class="customer__wrapper">
+          <div class="customer__inner">
+            <div class="inner__head">
+              <span class="inner__head-title"
+                ><purple>Customer</purple> Say</span
+              >
+            </div>
+            <div class="inner__content">
+              <div class="inner__content-list">
+                <div class="inner__content-item item">
+                  <div class="item__header">
+                    <img
+                      src="/firstProject/images/mujik.png"
+                      alt="profile picture"
+                    />
+                    <div class="item__header-text">
+                      <span class="item__header-title">Alexander R.</span>
+                      <span class="item__header-subtitle"
+                        >01 Year With Us
+                      </span>
+                    </div>
+                    <img src="/firstProject/images/quote.svg" alt="quote" />
+                  </div>
+                  <span class="item__text"
+                    >“ Online invoice payment helps companies save time, are
+                    faster and save maximum effort for the clients and save
+                    maximum effort. Online invoice payment helps companies save
+                    time ”</span
+                  >
+                  <img src="/firstProject/images/Star.svg" alt="five stars" />
                 </div>
               </div>
             </div>

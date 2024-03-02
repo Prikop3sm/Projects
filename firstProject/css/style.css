@@ -1,7 +1,26 @@
 body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(243, 243, 243);
+}
+
+header {
+  width: 100%;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  width: 120px;
+  height: 63px;
+  border-radius: 17px;
+  font-size: 17px;
+  color: rgb(249, 249, 249);
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -10,18 +29,22 @@ body {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0px;
   padding: 30px 0 25px;
+  width: 100%;
+  border-bottom: 2px solid rgb(203, 203, 203);
+  background-color: rgb(249, 249, 249);
+  z-index: 9999;
+}
+
+.header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 2px solid rgb(203, 203, 203);
-  background-color: rgb(249, 249, 249);
-  z-index: 9999;
 }
 
 .header__logo {
@@ -47,9 +70,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  margin-right: auto;
+  margin-left: 105px;
+  margin-right: 445px;
 }
 
 .header__link {
@@ -70,21 +93,6 @@ body {
   list-style-type: none;
   font-size: 18px;
   padding-left: 30px;
-}
-
-button {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  width: 120px;
-  height: 63px;
-  border-radius: 17px;
-  font-size: 17px;
-  color: rgb(249, 249, 249);
-  border: none;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 .purpleButton {
@@ -119,6 +127,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 116px;
 }
 
 .box_left {
@@ -664,6 +673,8 @@ purple {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgb(203, 203, 203);
 }
 
 .purchase_left {
@@ -748,14 +759,17 @@ purple {
   gap: 22px;
 }
 
+.item_wrapper {
+  padding: 25.13px;
+  border-radius: 18.85px;
+  border: 1.57px solid rgb(237, 242, 247);
+}
+
 .right_information_main_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 458.61px;
-  padding: 25.13px;
-  border-radius: 18.85px;
-  border: 1.57px solid rgb(237, 242, 247);
 }
 
 .right_information_main_item_left {
@@ -802,7 +816,86 @@ purple {
 }
 
 #yellow_form {
+  content: "";
   position: relative;
-  top: 10px;
-  width: 400px;
+  height: 10px;
+  margin-top: 10px;
+  background-color: rgba(251, 172, 24, 0.2);
+  border-radius: 78.53px;
+}
+
+#yellow_fill {
+  position: relative;
+  background-color: rgb(251, 173, 24);
+  height: 10px;
+  width: 245px;
+  border-radius: 78.53px;
+}
+
+#purple_form {
+  content: "";
+  position: relative;
+  height: 10px;
+  margin-top: 10px;
+  background-color: rgba(108, 95, 188, 0.2);
+  border-radius: 78.53px;
+}
+
+#purple_fill {
+  position: relative;
+  background-color: rgb(108, 95, 188);
+  height: 10px;
+  width: 380px;
+  border-radius: 78.53px;
+}
+
+.customer__wrapper {
+  padding-top: 116px;
+}
+
+.inner__head {
+  text-align: center;
+}
+
+.inner__head-title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.inner__content {
+  padding-top: 80px;
+}
+
+.inner__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 528px;
+  padding: 38px 43px;
+  background-color: rgb(255, 255, 255);
+}
+
+.item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item__header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-right: 150px;
+  gap: 10px;
 }
