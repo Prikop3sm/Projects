@@ -34,7 +34,7 @@ button:hover {
   padding: 30px 0 25px;
   width: 100%;
   border-bottom: 2px solid rgb(203, 203, 203);
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(243, 243, 243);
   z-index: 9999;
 }
 
@@ -109,7 +109,7 @@ button:hover {
 }
 
 .whiteButton {
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(243, 243, 243);
   color: rgb(96, 96, 96);
   border: 1.5px solid rgb(108, 95, 188);
 }
@@ -422,8 +422,6 @@ purple {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 395.99px;
-  height: 297.6px;
   border-radius: 30.02px;
   border: 1.25px;
   gap: 10px;
@@ -444,7 +442,7 @@ purple {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  padding: 10px;
 }
 
 .item_information_highlight {
@@ -511,6 +509,7 @@ purple {
   position: relative;
   left: 200px;
   bottom: 10px;
+  background-color: white;
 }
 
 .restaurants_bottom {
@@ -868,6 +867,14 @@ purple {
   padding-top: 80px;
 }
 
+.inner__content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+  overflow: hidden;
+}
+
 .inner__content-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,9 +883,14 @@ purple {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 528px;
   padding: 38px 43px;
   background-color: rgb(255, 255, 255);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 35px;
+  border-radius: 30px;
+  position: relative;
+  left: -535px;
 }
 
 .item__header {
@@ -896,6 +908,119 @@ purple {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 20px;
-  padding-right: 150px;
   gap: 10px;
+  min-width: 150px;
+}
+
+.item__header_quote {
+  margin-left: 144px;
+}
+
+.item__text {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: justified;
+  color: rgb(99, 99, 99);
+}
+
+.item__img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.slider__form {
+  position: relative;
+  height: 10px;
+  width: 699px;
+  margin-top: 10px;
+  background-color: rgba(108, 95, 188, 0.2);
+  border-radius: 78.53px;
+  margin: 50px auto;
+}
+.slider__form:hover {
+  cursor: pointer;
+}
+
+.slider__scroll {
+  position: relative;
+  background-color: rgb(108, 95, 188);
+  height: 10px;
+  width: 233px;
+  border-radius: 78.53px;
+}
+
+.subscribe__inner {
+  background-image: url(/firstProject/images/foods.svg);
+  background-color: rgb(108, 95, 188);
+  margin-top: 100px;
+  width: 1214px;
+  height: 280px;
+  border-radius: 30px;
+  opacity: 0.8px;
+}
+.subscribe__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 37px 66px;
+  gap: 20px;
+}
+.subscribe__content-img {
+  position: absolute;
+  right: 72px;
+  top: 64px;
+  width: 274px;
+}
+.subscribe__content input {
+  min-width: 300px;
+  min-height: 68px;
+  border-radius: 14.23px;
+  border: 2px solid transparent;
+  background-color: rgb(219, 219, 219);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-left: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  outline: none;
+  margin: 1px;
+  padding-right: 160px;
+}
+.subscribe__content-text {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 105px;
+  color: rgb(255, 255, 255);
+}
+.subscribe__content-button {
+  position: absolute;
+  right: 2%;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.subscribe__input-wrapper {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 2px;
 }
