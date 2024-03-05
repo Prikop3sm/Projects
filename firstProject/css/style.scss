@@ -49,7 +49,7 @@ button:hover {
   align-items: center;
 }
 
-.logo_text {
+.logo-text {
   padding-left: 11px;
   font-size: 21px;
   color: rgba(108, 95, 188, 1);
@@ -825,10 +825,8 @@ purple {
     background-image: url(/firstProject/images/foods.svg);
     background-color: rgba(108, 95, 188, 1);
     margin-top: 100px;
-    width: 1214px;
     height: 280px;
     border-radius: 30px;
-    opacity: 0.8px;
   }
 
   &__content {
@@ -889,6 +887,59 @@ purple {
       border: 2px solid transparent;
       border-radius: 15px;
       padding: 2px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 150px;
+  background-color: rgb(228, 228, 228, 1);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(129, 129, 129, 1);
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &-buttons {
+      display: flex;
+      gap: 70px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+      letter-spacing: 0em;
+      color: rgba(153, 153, 153, 1);
+    }
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    &-copyright {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: rgba(153, 153, 153, 1);
+    }
+
+    &-buttons {
+      display: flex;
+      gap: 50px;
     }
   }
 }

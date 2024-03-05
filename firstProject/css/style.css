@@ -57,7 +57,7 @@ button:hover {
           align-items: center;
 }
 
-.logo_text {
+.logo-text {
   padding-left: 11px;
   font-size: 21px;
   color: rgb(108, 95, 188);
@@ -957,10 +957,8 @@ purple {
   background-image: url(/firstProject/images/foods.svg);
   background-color: rgb(108, 95, 188);
   margin-top: 100px;
-  width: 1214px;
   height: 280px;
   border-radius: 30px;
-  opacity: 0.8px;
 }
 .subscribe__content {
   position: relative;
@@ -1023,4 +1021,71 @@ purple {
   border: 2px solid transparent;
   border-radius: 15px;
   padding: 2px;
+}
+
+.footer {
+  margin-top: 150px;
+  background-color: rgb(228, 228, 228);
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+  border-bottom: 1px solid rgb(129, 129, 129);
+}
+.footer__top__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__top-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: rgb(153, 153, 153);
+}
+.footer__bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+.footer__bot-copyright {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(153, 153, 153);
+}
+.footer__bot-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
 }
