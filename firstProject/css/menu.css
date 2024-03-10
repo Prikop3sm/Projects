@@ -1,0 +1,208 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: rgb(243, 243, 243);
+}
+
+header {
+  width: 100%;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  width: 120px;
+  height: 63px;
+  border-radius: 17px;
+  font-size: 17px;
+  color: rgb(249, 249, 249);
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1246px;
+  margin: 0 auto;
+}
+
+.purpleButton {
+  background-color: rgb(108, 95, 188);
+  color: rgb(249, 249, 249);
+  border: 1.5px solid rgb(108, 95, 188);
+}
+
+.purpleButton:hover {
+  background-color: transparent;
+  color: rgb(96, 96, 96);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.whiteButton {
+  background-color: rgb(243, 243, 243);
+  color: rgb(96, 96, 96);
+  border: 1.5px solid rgb(108, 95, 188);
+}
+
+.healthy {
+  background-color: rgb(255, 236, 187);
+  color: rgb(218, 163, 26);
+}
+
+.trending {
+  background-color: rgb(255, 181, 164);
+  color: rgb(251, 71, 29);
+}
+
+.supreme {
+  color: rgb(48, 157, 91);
+  background-color: rgb(181, 255, 211);
+}
+
+purple {
+  color: rgb(92, 78, 174);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 329px;
+  max-height: 90px;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: -10px 5px 5px rgba(70, 70, 70, 0.05);
+          box-shadow: -10px 5px 5px rgba(70, 70, 70, 0.05);
+  padding: 10px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.card:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.card img {
+  max-width: 74px;
+  margin-right: 10px;
+}
+.card-text {
+  display: block;
+  width: 100%;
+}
+.card-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card-subtitle {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card-time {
+  display: block;
+  text-align: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: auto;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: rgb(172, 173, 185);
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  padding: 30px 0 25px;
+  width: 100%;
+  border-bottom: 2px solid rgb(203, 203, 203);
+  background-color: rgb(243, 243, 243);
+  z-index: 9999;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo:hover {
+  cursor: pointer;
+}
+.header__logo-text {
+  padding-left: 11px;
+  font-size: 21px;
+  color: rgb(108, 95, 188);
+}
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: 105px;
+  margin-right: 445px;
+}
+.header__navigation-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  color: rgb(96, 96, 96);
+  list-style-type: none;
+  font-size: 18px;
+  padding-left: 30px;
+}
+.header__link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+.header__link::after {
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 2px;
+  height: 2px;
+  background-color: rgb(108, 95, 188);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.header__link:hover {
+  color: rgb(108, 95, 188);
+}
+.header__link:hover:after {
+  width: 100%;
+}
