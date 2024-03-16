@@ -196,6 +196,12 @@ purple {
       }
     }
   }
+
+  &__registration {
+    &-link {
+      text-decoration: none;
+    }
+  }
 }
 
 .application {

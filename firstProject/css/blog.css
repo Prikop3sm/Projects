@@ -229,6 +229,9 @@ purple {
 .header__link:hover:after {
   width: 100%;
 }
+.header__registration-link {
+  text-decoration: none;
+}
 
 .subscribe {
   margin-top: 200px;
