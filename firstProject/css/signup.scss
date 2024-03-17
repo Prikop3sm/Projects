@@ -230,6 +230,7 @@ purple {
     display: flex;
     gap: 20px;
     margin-top: 40px;
+    justify-content: space-around;
 
     & button {
       background-color: rgb(230, 230, 230);
@@ -247,6 +248,43 @@ purple {
     color: rgba(0, 90, 100, 0.35);
   }
 
+  &__name {
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5%;
+    }
+  }
+
+  &__email {
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5%;
+    }
+  }
+
+  &__password {
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   &__fields {
     margin-top: 30px;
     display: flex;
@@ -254,12 +292,26 @@ purple {
     gap: 25px;
 
     & input {
-      width: 382px;
+      width: 302px;
       height: 74px;
       border: none;
-      padding: 0 30px;
+      padding: 0 70px;
       border-radius: 15px;
       background-color: rgb(230, 230, 230);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 25px;
+      letter-spacing: 0.07em;
+      color: rgba(108, 95, 188, 1);
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid rgba(108, 95, 188, 1);
+      }
+
+      &:focus {
+        outline: 2px solid rgba(108, 95, 188, 1);
+      }
     }
   }
 
@@ -290,6 +342,17 @@ purple {
     padding-top: 90px;
     color: rgba(113, 128, 150, 1);
   }
+}
+
+#passwordShow {
+  display: none;
+}
+
+#passwordPic {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
 }
 
 .right {

@@ -237,6 +237,8 @@ purple {
   display: flex;
   gap: 20px;
   margin-top: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .left__socials button {
   background-color: rgb(230, 230, 230);
@@ -251,6 +253,42 @@ purple {
   margin-top: 30px;
   color: rgba(0, 90, 100, 0.35);
 }
+.left__name {
+  position: relative;
+}
+.left__name img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5%;
+}
+.left__email {
+  position: relative;
+}
+.left__email img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5%;
+}
+.left__password {
+  position: relative;
+}
+.left__password img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10%;
+}
+.left__password img:hover {
+  cursor: pointer;
+}
 .left__fields {
   margin-top: 30px;
   display: -webkit-box;
@@ -263,12 +301,24 @@ purple {
   gap: 25px;
 }
 .left__fields input {
-  width: 382px;
+  width: 302px;
   height: 74px;
   border: none;
-  padding: 0 30px;
+  padding: 0 70px;
   border-radius: 15px;
   background-color: rgb(230, 230, 230);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.07em;
+  color: rgb(108, 95, 188);
+  border: 1px solid transparent;
+}
+.left__fields input:hover {
+  border: 1px solid rgb(108, 95, 188);
+}
+.left__fields input:focus {
+  outline: 2px solid rgb(108, 95, 188);
 }
 .left__signup-button {
   margin-top: 25px;
@@ -295,6 +345,19 @@ purple {
           justify-content: space-between;
   padding-top: 90px;
   color: rgb(113, 128, 150);
+}
+
+#passwordShow {
+  display: none;
+}
+
+#passwordPic {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5%;
 }
 
 .right {
