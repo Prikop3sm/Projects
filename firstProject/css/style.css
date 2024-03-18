@@ -66,16 +66,48 @@ purple {
 }
 
 .notification {
+  display: none;
   width: 300px;
   height: 80px;
   position: fixed;
-  bottom: 50px;
+  bottom: 0;
   left: 50px;
+  padding: 0 20px;
   border-radius: 15px;
   z-index: 9999;
-  background-color: rgb(81, 199, 128);
+  background-color: rgb(108, 95, 188);
+  -webkit-animation-name: showNotification;
+          animation-name: showNotification;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+.notification-content {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgb(255, 243, 235);
 }
 
+@-webkit-keyframes showNotification {
+  from {
+    margin-bottom: -150px;
+  }
+  to {
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes showNotification {
+  from {
+    margin-bottom: -150px;
+  }
+  to {
+    margin-bottom: 50px;
+  }
+}
 .card {
   display: -webkit-box;
   display: -ms-flexbox;

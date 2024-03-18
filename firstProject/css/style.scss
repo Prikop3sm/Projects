@@ -66,14 +66,35 @@ purple {
 }
 
 .notification {
+  display: none;
   width: 300px;
   height: 80px;
   position: fixed;
-  bottom: 50px;
+  bottom: 0;
   left: 50px;
+  padding: 0 20px;
   border-radius: 15px;
   z-index: 9999;
-  background-color: rgb(81, 199, 128);
+  background-color: rgba(108, 95, 188, 1);
+  animation-name: showNotification;
+  animation-duration: 0.4s;
+
+  &-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 243, 235, 1);
+  }
+}
+
+@keyframes showNotification {
+  from {
+    margin-bottom: -150px;
+  }
+  to {
+    margin-bottom: 50px;
+  }
 }
 
 .card {
