@@ -736,6 +736,7 @@ purple {
 
       &:hover {
         cursor: pointer;
+        background-color: rgb(108, 95, 188, 0.2);
       }
     }
 
@@ -758,27 +759,35 @@ purple {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      width: 100%;
+      width: 0%;
+      font-size: 0;
       background-color: white;
-      font-size: 19px;
       font-weight: 600;
       line-height: 28px;
       letter-spacing: 0.6px;
       border-radius: 13px;
-      border: 2px solid rgb(108, 95, 188);
+      border: 0px solid rgb(108, 95, 188);
       z-index: 1;
-      // opacity: 0;
-      // display: none;
+      opacity: 0;
+      display: block;
       transition: 0.3s;
 
-      & li {
-        margin: 5px;
-        padding-left: 20px;
-        cursor: pointer;
-        border-radius: 10px;
+      &-open {
+        border: 2px solid rgb(108, 95, 188);
+        font-size: 19px;
+        width: 100%;
+        opacity: 1;
+        transition: 0.3s;
 
-        &:hover {
-          background-color: rgb(108, 95, 188, 0.4);
+        & li {
+          margin: 5px;
+          padding-left: 20px;
+          cursor: pointer;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: rgb(108, 95, 188, 0.4);
+          }
         }
       }
     }

@@ -797,6 +797,7 @@ purple {
 }
 .purchase__right-select:hover {
   cursor: pointer;
+  background-color: rgba(108, 95, 188, 0.2);
 }
 .purchase__right-caret {
   width: 0;
@@ -820,25 +821,35 @@ purple {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 100%;
+  width: 0%;
+  font-size: 0;
   background-color: white;
-  font-size: 19px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0.6px;
   border-radius: 13px;
-  border: 2px solid rgb(108, 95, 188);
+  border: 0px solid rgb(108, 95, 188);
   z-index: 1;
+  opacity: 0;
+  display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.purchase__right-menu li {
+.purchase__right-menu-open {
+  border: 2px solid rgb(108, 95, 188);
+  font-size: 19px;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.purchase__right-menu-open li {
   margin: 5px;
   padding-left: 20px;
   cursor: pointer;
   border-radius: 10px;
 }
-.purchase__right-menu li:hover {
+.purchase__right-menu-open li:hover {
   background-color: rgba(108, 95, 188, 0.4);
 }
 .purchase__right-active {
