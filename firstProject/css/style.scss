@@ -756,6 +756,7 @@ purple {
     &-menu {
       list-style: none;
       margin-top: 5px;
+      padding: 5px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -777,10 +778,9 @@ purple {
         font-size: 19px;
         width: 100%;
         opacity: 1;
-        transition: 0.3s;
 
         & li {
-          margin: 5px;
+          margin-top: 5px;
           padding-left: 20px;
           cursor: pointer;
           border-radius: 10px;
@@ -827,7 +827,7 @@ purple {
       font-size: 19px;
       font-weight: 800;
       line-height: 28px;
-      letter-spacing: 0.6282353401184082px;
+      letter-spacing: 0.6px;
       text-align: left;
       color: rgba(26, 32, 44, 1);
     }
@@ -836,7 +836,7 @@ purple {
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
-      letter-spacing: 0.6282353401184082px;
+      letter-spacing: 0.6px;
       text-align: left;
       color: rgba(160, 174, 192, 1);
     }
@@ -848,7 +848,7 @@ purple {
         font-size: 22px;
         font-weight: 800;
         line-height: 33px;
-        letter-spacing: 0.3141176700592041px;
+        letter-spacing: 0.3px;
         text-align: right;
         color: rgba(26, 32, 44, 1);
       }
@@ -886,7 +886,7 @@ purple {
   position: relative;
   background-color: rgba(108, 95, 188, 1);
   height: 10px;
-  width: 380px;
+  width: 100%;
   border-radius: 78.53px;
 }
 

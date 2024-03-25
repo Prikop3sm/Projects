@@ -10,12 +10,11 @@ function flag(event) {
   document.addEventListener("pointermove", sliderMover);
 }
 
-function noFlag(event) {
+function noFlag() {
   document.removeEventListener("pointermove", sliderMover);
 }
 
 function sliderMover(event) {
-  const target = event.target;
   event.preventDefault();
 
   event.clientX - formWidth + sliderWidth / 2 < 0
