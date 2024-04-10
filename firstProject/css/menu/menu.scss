@@ -336,6 +336,7 @@ purple {
       margin-top: 5px;
 
       & li {
+        position: relative;
         float: left;
         padding: 0 15px;
         font-size: 11px;
@@ -371,7 +372,7 @@ purple {
     & img {
       position: relative;
       top: -10px;
-      left: 40px;
+      transform: translateX(-50%);
     }
   }
 }

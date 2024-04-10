@@ -357,6 +357,7 @@ purple {
   margin-top: 5px;
 }
 .weekend__price-options li {
+  position: relative;
   float: left;
   padding: 0 15px;
   font-size: 11px;
@@ -387,7 +388,9 @@ purple {
 .weekend__form img {
   position: relative;
   top: -10px;
-  left: 40px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .restaurants__header {
