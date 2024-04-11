@@ -9,7 +9,6 @@ const options = document.querySelectorAll(".weekend__price-options > li");
 const points = [];
 
 function flag(event) {
-  event.preventDefault();
   if (!event?.target?.closest("#slider")) return;
 
   document.addEventListener("pointermove", sliderMover);
@@ -20,30 +19,34 @@ function noFlag() {
 }
 
 function sliderMover(event) {
-  const target = event.target;
-  formLeft = form.getBoundingClientRect().left;
   event.preventDefault();
 
   if (event.clientX < points[0] + (points[1] - points[0]) / 2) {
     slider.style.left = points[0] - formLeft + "px";
+    console.log(event.clientX, points[0], (points[1] - points[0]) / 2);
   } else if (
-    event.clientX > points[0] - (points[1] - points[0] / 2) &&
-    event.clientX < points[1] + (points[2] - points[1] / 2)
+    event.clientX > points[0] + (points[1] - points[0]) / 2 &&
+    event.clientX < points[1] + (points[2] - points[1]) / 2
   ) {
     slider.style.left = points[1] - formLeft + "px";
+  } else if (
+    event.clientX > points[1] + (points[2] - points[1]) / 2 &&
+    event.clientX < points[2] + (points[3] - points[2]) / 2
+  ) {
+    slider.style.left = points[2] - formLeft + "px";
+  } else if (
+    event.clientX > points[2] + (points[3] - points[2]) / 2 &&
+    event.clientX < points[3] + (points[4] - points[3]) / 2
+  ) {
+    slider.style.left = points[3] - formLeft + "px";
+  } else if (
+    event.clientX > points[3] + (points[4] - points[3]) / 2 &&
+    event.clientX < points[4] + (points[5] - points[4]) / 2
+  ) {
+    slider.style.left = points[4] - formLeft + "px";
+  } else if (event.clientX > points[4] + (points[5] - points[4]) / 2) {
+    slider.style.left = points[5] - formLeft + "px";
   }
-  // else if (
-  //   event.clientX > points[1] - (points[2] - points[1] / 2) &&
-  //   event.clientX < points[2] + (points[3] - points[2] / 2)
-  // ) {
-  //   slider.style.left = points[2] - formLeft + "px";
-  // }
-  // else if (
-  //   event.clientX < points[3] + (points[3] - points[2]) &&
-  //   event.clientX > points[3] - (points[4] - points[3])
-  // ) {
-  //   slider.style.left = points[3] - formLeft + "px";
-  // }
 }
 
 options.forEach((elem) => {
