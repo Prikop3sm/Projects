@@ -521,3 +521,7 @@ purple {
   display: flex;
   gap: 50px;
 }
+
+.dropdownOpen {
+  display: block;
+}
