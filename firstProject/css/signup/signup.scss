@@ -345,7 +345,6 @@ purple {
 }
 
 #passwordShow {
-  display: none;
 }
 
 #passwordPic {
@@ -428,4 +427,8 @@ purple {
 #graphic {
   position: absolute;
   bottom: 10%;
+}
+
+.hide {
+  display: none;
 }

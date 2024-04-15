@@ -347,10 +347,6 @@ purple {
   color: rgb(113, 128, 150);
 }
 
-#passwordShow {
-  display: none;
-}
-
 #passwordPic {
   position: absolute;
   top: 50%;
@@ -429,4 +425,8 @@ purple {
 #graphic {
   position: absolute;
   bottom: 10%;
+}
+
+.hide {
+  display: none;
 }
