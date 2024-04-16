@@ -214,7 +214,6 @@ purple {
           align-items: center;
   margin-right: auto;
   margin-left: 105px;
-  margin-right: 445px;
 }
 .header__navigation-buttons {
   display: -webkit-box;
@@ -251,6 +250,12 @@ purple {
 }
 .header__link:hover:after {
   width: 100%;
+}
+.header__registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 .header__registration-link {
   text-decoration: none;
@@ -343,7 +348,7 @@ purple {
   position: relative;
 }
 .application__right-card {
-  right: -222px;
+  right: -200px;
 }
 .application__right-picture {
   top: 1px;
@@ -1179,4 +1184,121 @@ purple {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    max-width: 80%;
+  }
+  .application__right-card {
+    right: -100px;
+  }
+}
+@media (max-width: 1250px) {
+  .application__left {
+    width: 80%;
+  }
+  .application__left-heading {
+    font-size: 60px;
+  }
+  .application__right-card {
+    width: 80%;
+  }
+  .application__right-picture {
+    width: 90%;
+  }
+  .application__right-picture img {
+    width: 90%;
+  }
+  .features__box {
+    height: 170px;
+  }
+  .features__item {
+    gap: 0;
+  }
+  .features__item-title {
+    font-size: 30px;
+  }
+  .features__item-subtitle {
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .application__left-heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .application__right-card {
+    width: 80%;
+  }
+  .application__right-picture {
+    width: 90%;
+  }
+  .application__right-picture img {
+    width: 90%;
+  }
+  .features__box {
+    height: 170px;
+  }
+  .features__item {
+    gap: 0;
+  }
+  .features__item-title {
+    font-size: 30px;
+  }
+  .features__item-subtitle {
+    font-size: 15px;
+  }
+  .features__item:nth-child(2) {
+    padding: 0 10px;
+  }
+  .mobile__left img {
+    width: 280px;
+  }
+  .mobile__right-title {
+    font-size: 40px;
+  }
+  .mobile__right-list {
+    font-size: 16px;
+    gap: 10px;
+  }
+  .mobile__right-more {
+    left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .application__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .application__right {
+    margin-top: 40px;
+  }
+  .features__box {
+    height: 170px;
+  }
+  .features__item {
+    gap: 0;
+  }
+  .features__item-title {
+    font-size: 24px;
+  }
+  .features__item-subtitle {
+    font-size: 14px;
+  }
+  .features__item:nth-child(2) {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .application__left-rating {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .application__right-card {
+    right: 0;
+  }
 }
