@@ -1,30 +1,39 @@
 const slider = document.querySelector(".slider__scroll");
-const sliderWidth = slider.getBoundingClientRect().width;
+const sliderWidth = slider.offsetWidth;
 const form = document.querySelector(".slider__form");
-const formWidth = form.getBoundingClientRect().width;
+const formWidth = form.offsetWidth;
 const items = document.querySelectorAll(".customer__content-item");
+let isMouseDown = false;
 
 function flag(event) {
   if (!event?.target?.classList.contains("slider__scroll")) return;
+  isMouseDown = true;
 
   document.addEventListener("pointermove", sliderMover);
 }
 
 function noFlag() {
+  isMouseDown = false;
   document.removeEventListener("pointermove", sliderMover);
 }
 
 function sliderMover(event) {
+  if (!isMouseDown) return;
   event.preventDefault();
 
-  event.clientX - formWidth + sliderWidth / 2 < 0
-    ? (slider.style.left = 0 + "px")
-    : event.clientX - formWidth + sliderWidth / 2 > 699 - sliderWidth
-    ? (slider.style.left = 699 - sliderWidth + "px")
-    : (slider.style.left = event.clientX - formWidth + sliderWidth / 2 + "px");
+  let sliderLeft =
+    event.clientX - form.getBoundingClientRect().left - sliderWidth / 2;
+
+  if (sliderLeft < 0) {
+    sliderLeft = 0;
+  } else if (sliderLeft > formWidth - sliderWidth) {
+    sliderLeft = formWidth - sliderWidth;
+  }
+
+  slider.style.left = sliderLeft + "px";
 
   items.forEach((item) => {
-    item.style.right = slider.style.left.slice(0, -2) * 5.6 + "px";
+    item.style.right = sliderLeft * 5.6 + "px";
   });
 }
 
