@@ -1168,8 +1168,30 @@ purple {
       }
     }
   }
+
+  .customer {
+    &__content {
+      &-list {
+        overflow: scroll;
+      }
+    }
+  }
+
   .favorite {
     left: 140px;
+  }
+  .slider {
+    &__form {
+      display: none;
+    }
+  }
+
+  .item {
+    &__header {
+      &-quote {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -1292,6 +1314,17 @@ purple {
     &__right {
       width: 400px;
       border: 1px solid rgb(205, 210, 214);
+    }
+  }
+  .subscribe {
+    &__content {
+      &-img {
+        width: 200px;
+        top: 100px;
+      }
+      & input {
+        min-width: 0;
+      }
     }
   }
 }
@@ -1440,6 +1473,13 @@ purple {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+      }
+    }
+  }
+  .customer {
+    &__content {
+      &-item {
+        padding: 20px;
       }
     }
   }

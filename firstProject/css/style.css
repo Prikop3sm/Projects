@@ -1228,8 +1228,17 @@ purple {
   .restaurants__list-item {
     width: 330px;
   }
+  .customer__content-list {
+    overflow: scroll;
+  }
   .favorite {
     left: 140px;
+  }
+  .slider__form {
+    display: none;
+  }
+  .item__header-quote {
+    margin: 0;
   }
 }
 @media (max-width: 1100px) {
@@ -1321,6 +1330,13 @@ purple {
   .purchase__right {
     width: 400px;
     border: 1px solid rgb(205, 210, 214);
+  }
+  .subscribe__content-img {
+    width: 200px;
+    top: 100px;
+  }
+  .subscribe__content input {
+    min-width: 0;
   }
 }
 @media (max-width: 700px) {
@@ -1439,5 +1455,8 @@ purple {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .customer__content-item {
+    padding: 20px;
   }
 }
