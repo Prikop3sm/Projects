@@ -525,3 +525,36 @@ purple {
 .dropdownOpen {
   display: block;
 }
+
+@media (max-width: 900px) {
+  .subscribe__content input {
+    min-width: 0;
+  }
+}
+@media (max-width: 800px) {
+  .subscribe__content-img {
+    width: 25%;
+    top: 120px;
+  }
+}
+@media (max-width: 700px) {
+  .subscribe__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+  }
+  .subscribe__content-img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .subscribe__content-text {
+    font-size: 40px;
+  }
+  .subscribe__input-wrapper input {
+    width: 120px;
+    font-size: 15px;
+    padding-right: 140px;
+  }
+}

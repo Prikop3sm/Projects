@@ -1159,8 +1159,6 @@ purple {
   }
 
   .restaurants {
-    &__header {
-    }
     &__list {
       padding: 0 20px;
       &-item {
@@ -1318,12 +1316,19 @@ purple {
   }
   .subscribe {
     &__content {
-      &-img {
-        width: 200px;
-        top: 100px;
-      }
       & input {
         min-width: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .subscribe {
+    &__content {
+      &-img {
+        width: 25%;
+        top: 120px;
       }
     }
   }
@@ -1381,6 +1386,14 @@ purple {
         &-vector {
           display: none;
         }
+      }
+    }
+  }
+  .subscribe {
+    &__content {
+      align-items: center;
+      &-img {
+        display: none;
       }
     }
   }
@@ -1480,6 +1493,22 @@ purple {
     &__content {
       &-item {
         padding: 20px;
+      }
+    }
+  }
+  .subscribe {
+    &__content {
+      &-text {
+        font-size: 40px;
+      }
+    }
+    &__input {
+      &-wrapper {
+        & input {
+          width: 120px;
+          font-size: 15px;
+          padding-right: 140px;
+        }
       }
     }
   }

@@ -23,7 +23,6 @@ function sliderMover(event) {
 
   if (event.clientX < points[0] + (points[1] - points[0]) / 2) {
     slider.style.left = points[0] - formLeft + "px";
-    console.log(event.clientX, points[0], (points[1] - points[0]) / 2);
   } else if (
     event.clientX > points[0] + (points[1] - points[0]) / 2 &&
     event.clientX < points[1] + (points[2] - points[1]) / 2

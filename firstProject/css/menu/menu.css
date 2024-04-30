@@ -582,6 +582,12 @@ purple {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10px;
 }
 .dishes__main-item {
   max-width: 224.63px;
@@ -589,8 +595,8 @@ purple {
   background-color: rgb(255, 255, 255);
   padding: 30px 15px;
   border-radius: 30px;
-  -webkit-box-shadow: 6.8484177589px 82.1810150146px 41.0905075073px 0px rgba(229, 229, 229, 0.7);
-          box-shadow: 6.8484177589px 82.1810150146px 41.0905075073px 0px rgba(229, 229, 229, 0.7);
+  -webkit-box-shadow: 6.8px 82.1px 41px 0px rgba(229, 229, 229, 0.7);
+          box-shadow: 6.8px 82.1px 41px 0px rgba(229, 229, 229, 0.7);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -788,4 +794,124 @@ purple {
 
 .dropdownOpen {
   display: block;
+}
+
+@media (max-width: 1250px) {
+  .weekend__content {
+    font-size: 60px;
+  }
+  .weekend__content-img {
+    width: 250px;
+    bottom: -20%;
+  }
+  .restaurants__list {
+    padding: 0 20px;
+  }
+  .restaurants__list-item {
+    width: 330px;
+  }
+  .favorite {
+    left: 140px;
+  }
+  .questions__list-hiddentext {
+    padding: 0;
+  }
+  .questions__list-wrapper {
+    margin: 0 25px;
+  }
+}
+@media (max-width: 1100px) {
+  .weekend__content {
+    font-size: 45px;
+    line-height: 90px;
+  }
+  .weekend__content-img {
+    width: 25%;
+    top: 10%;
+    right: 5%;
+  }
+  .restaurants__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 20px;
+  }
+  .restaurants__list-item {
+    width: 330px;
+  }
+  .restaurants .favorite {
+    left: 130px;
+  }
+}
+@media (max-width: 900px) {
+  .weekend__category-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .weekend__left {
+    width: 100%;
+  }
+  .weekend__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .weekend__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .weekend__right {
+    max-width: 400px;
+  }
+  .restaurants__bottom {
+    text-align: center;
+  }
+  .dishes__bottom {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .weekend__content {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  .weekend__content-img {
+    display: none;
+  }
+  .questions__title {
+    margin-bottom: 40px;
+  }
+  .questions__title-text {
+    font-size: 40px;
+  }
+  .questions__list-item {
+    line-height: 30px;
+  }
+  .questions__list-hiddentext {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .restaurants__list-item {
+    width: 280px;
+  }
+  .restaurants .favorite {
+    left: 90px;
+  }
+  .dishes__main {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .dishes__title {
+    line-height: 37px;
+  }
 }

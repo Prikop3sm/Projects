@@ -545,6 +545,9 @@ purple {
     padding-top: 76px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
 
     &-item {
       max-width: 224.63px;
@@ -552,8 +555,7 @@ purple {
       background-color: rgba(255, 255, 255, 1);
       padding: 30px 15px;
       border-radius: 30px;
-      box-shadow: 6.84841775894165px 82.18101501464844px 41.09050750732422px 0px
-        rgba(229, 229, 229, 0.7);
+      box-shadow: 6.8px 82.1px 41px 0px rgba(229, 229, 229, 0.7);
       transition: 0.3s ease-out;
 
       &:hover {
@@ -754,4 +756,154 @@ purple {
 
 .dropdownOpen {
   display: block;
+}
+
+@media (max-width: 1450px) {
+}
+@media (max-width: 1250px) {
+  .weekend {
+    &__content {
+      font-size: 60px;
+
+      &-img {
+        width: 250px;
+        bottom: -20%;
+      }
+    }
+  }
+
+  .restaurants {
+    &__list {
+      padding: 0 20px;
+      &-item {
+        width: 330px;
+      }
+    }
+  }
+  .favorite {
+    left: 140px;
+  }
+
+  .questions {
+    &__list {
+      &-hiddentext {
+        padding: 0;
+      }
+      &-wrapper {
+        margin: 0 25px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .weekend {
+    &__content {
+      font-size: 45px;
+      line-height: 90px;
+
+      &-img {
+        width: 25%;
+        top: 10%;
+        right: 5%;
+      }
+    }
+  }
+  .restaurants {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      &-item {
+        width: 330px;
+      }
+    }
+    .favorite {
+      left: 130px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .weekend {
+    &__category {
+      &-list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+
+    &__left {
+      width: 100%;
+    }
+
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__content {
+      align-items: center;
+    }
+
+    &__right {
+      max-width: 400px;
+    }
+  }
+  .restaurants {
+    &__bottom {
+      text-align: center;
+    }
+  }
+  .dishes {
+    &__bottom {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .weekend {
+    &__content {
+      font-size: 35px;
+      line-height: 70px;
+      &-img {
+        display: none;
+      }
+    }
+  }
+  .questions {
+    &__title {
+      margin-bottom: 40px;
+      &-text {
+        font-size: 40px;
+      }
+    }
+    &__list {
+      &-item {
+        line-height: 30px;
+      }
+      &-hiddentext {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .restaurants {
+    &__list {
+      &-item {
+        width: 280px;
+      }
+    }
+    .favorite {
+      left: 90px;
+    }
+  }
+  .dishes {
+    &__main {
+      justify-content: space-around;
+    }
+
+    &__title {
+      line-height: 37px;
+    }
+  }
 }

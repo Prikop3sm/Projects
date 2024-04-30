@@ -505,3 +505,58 @@ purple {
 .dropdownOpen {
   display: block;
 }
+
+@media (max-width: 1450px) {
+}
+@media (max-width: 1250px) {
+}
+@media (max-width: 1100px) {
+}
+@media (max-width: 900px) {
+  .subscribe {
+    &__content {
+      & input {
+        min-width: 0;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .subscribe {
+    &__content {
+      &-img {
+        width: 25%;
+        top: 120px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .subscribe {
+    &__content {
+      align-items: center;
+      gap: 0;
+      &-img {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .subscribe {
+    &__content {
+      &-text {
+        font-size: 40px;
+      }
+    }
+    &__input {
+      &-wrapper {
+        & input {
+          width: 120px;
+          font-size: 15px;
+          padding-right: 140px;
+        }
+      }
+    }
+  }
+}

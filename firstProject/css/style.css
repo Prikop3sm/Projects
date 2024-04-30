@@ -1331,12 +1331,14 @@ purple {
     width: 400px;
     border: 1px solid rgb(205, 210, 214);
   }
-  .subscribe__content-img {
-    width: 200px;
-    top: 100px;
-  }
   .subscribe__content input {
     min-width: 0;
+  }
+}
+@media (max-width: 800px) {
+  .subscribe__content-img {
+    width: 25%;
+    top: 120px;
   }
 }
 @media (max-width: 700px) {
@@ -1381,6 +1383,14 @@ purple {
     gap: 10px;
   }
   .mobile__right-more-vector {
+    display: none;
+  }
+  .subscribe__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe__content-img {
     display: none;
   }
 }
@@ -1458,5 +1468,13 @@ purple {
   }
   .customer__content-item {
     padding: 20px;
+  }
+  .subscribe__content-text {
+    font-size: 40px;
+  }
+  .subscribe__input-wrapper input {
+    width: 120px;
+    font-size: 15px;
+    padding-right: 140px;
   }
 }
