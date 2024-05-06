@@ -509,8 +509,37 @@ purple {
 @media (max-width: 1450px) {
 }
 @media (max-width: 1250px) {
+  .articles {
+    &__main {
+      margin: 75px 5% 0 12%;
+      &-item {
+        width: 200px;
+      }
+      &-information {
+        margin: 0 7px;
+      }
+      &-title {
+        font-size: 19px;
+      }
+    }
+  }
 }
 @media (max-width: 1100px) {
+  .articles {
+    &__main {
+      margin: 75px 5% 0 9%;
+      &-item {
+        width: 170px;
+      }
+      &-date {
+        line-height: 16px;
+        font-size: 14px;
+      }
+      &-subtitle {
+        align-items: center;
+      }
+    }
+  }
 }
 @media (max-width: 900px) {
   .subscribe {
@@ -518,6 +547,12 @@ purple {
       & input {
         min-width: 0;
       }
+    }
+  }
+
+  .articles {
+    &__main {
+      margin: 75px 0 0 0;
     }
   }
 }
@@ -538,6 +573,14 @@ purple {
       gap: 0;
       &-img {
         display: none;
+      }
+    }
+  }
+
+  .articles {
+    &__main {
+      &-item {
+        width: 150px;
       }
     }
   }

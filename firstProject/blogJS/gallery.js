@@ -12,17 +12,19 @@ items.forEach((elem) => {
 function galleryMove(event) {
   const target = event.target;
   const width = +items[0].getBoundingClientRect().width;
+  console.log(width);
 
   pos = +items[0].style.left.slice(0, items[0].style.left.length - 2);
 
-  if (target === rightArrow && pos > -1096) {
+  if (target === rightArrow && pos > -(width * 3 + 46)) {
     items.forEach((elem) => {
       elem.style.left = pos - width - 15 + "px";
     });
     rightArrow.style.opacity = 1;
     leftArrow.style.opacity = 1;
+    console.log(pos);
 
-    if (pos === -1095) {
+    if (pos === -(width * 3 + 45)) {
       console.log("asd");
       rightArrow.style.opacity = 0.5;
     }
@@ -33,7 +35,7 @@ function galleryMove(event) {
     leftArrow.style.opacity = 1;
     rightArrow.style.opacity = 1;
 
-    if (pos === -365) {
+    if (pos === -width - 15) {
       leftArrow.style.opacity = 0.5;
     }
   }
