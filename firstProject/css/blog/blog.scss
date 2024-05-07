@@ -521,6 +521,23 @@ purple {
       &-title {
         font-size: 19px;
       }
+      &-date {
+        line-height: 16px;
+        font-size: 14px;
+      }
+      &-subtitle {
+        align-items: center;
+      }
+    }
+  }
+  .questions {
+    &__list {
+      &-hiddentext {
+        padding: 0;
+      }
+      &-wrapper {
+        margin: 0 25px;
+      }
     }
   }
 }
@@ -530,13 +547,6 @@ purple {
       margin: 75px 5% 0 9%;
       &-item {
         width: 170px;
-      }
-      &-date {
-        line-height: 16px;
-        font-size: 14px;
-      }
-      &-subtitle {
-        align-items: center;
       }
     }
   }
@@ -565,6 +575,47 @@ purple {
       }
     }
   }
+  .articles {
+    &__main {
+      gap: 20px;
+      padding: 70px 10px;
+      &-item {
+        width: 140px;
+        height: 305px;
+        gap: 10px;
+      }
+      &-title {
+        text-align: center;
+      }
+      &-subtitle {
+        flex-direction: column;
+      }
+      &-date {
+        align-self: center;
+      }
+      &-information {
+      }
+    }
+    &__bottom {
+      padding-top: 0;
+    }
+  }
+  .questions {
+    &__title {
+      margin-bottom: 40px;
+      &-text {
+        font-size: 40px;
+      }
+    }
+    &__list {
+      &-item {
+        line-height: 30px;
+      }
+      &-hiddentext {
+        font-size: 18px;
+      }
+    }
+  }
 }
 @media (max-width: 700px) {
   .subscribe {
@@ -576,15 +627,20 @@ purple {
       }
     }
   }
+}
 
+@media (max-width: 600px) {
   .articles {
     &__main {
-      &-item {
-        width: 150px;
-      }
+      padding: 40px 0;
+      overflow: scroll;
+    }
+    &__bottom {
+      display: none;
     }
   }
 }
+
 @media (max-width: 500px) {
   .subscribe {
     &__content {

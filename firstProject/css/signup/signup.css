@@ -217,6 +217,9 @@ purple {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .left {
@@ -366,11 +369,11 @@ purple {
   position: relative;
   width: 550px;
   height: 600px;
-  margin-left: 220px;
+  margin-left: 180px;
 }
 .right__card {
   margin-top: 30px;
-  margin-left: 150px;
+  margin-left: 100px;
   z-index: 1;
 }
 .right__main {
@@ -429,4 +432,19 @@ purple {
 
 .hide {
   display: none;
+}
+
+@media (max-width: 1450px) {
+  .left {
+    padding: 150px 180px 0 180px;
+  }
+  .right__images {
+    margin-left: 120px;
+  }
+  .right__text-subtitle {
+    padding: 0 120px;
+  }
+  .right__card {
+    margin-left: 50px;
+  }
 }
