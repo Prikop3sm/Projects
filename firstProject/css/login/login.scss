@@ -209,6 +209,9 @@ purple {
 
   &__inner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -290,6 +293,7 @@ purple {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width: fit-content;
 
     & input {
       width: 302px;
@@ -431,4 +435,119 @@ purple {
 
 .hide {
   display: none;
+}
+
+@media (max-width: 1700px) {
+  .login {
+  }
+  .left {
+    padding: 150px 9% 0 9%;
+  }
+  .right {
+    &__card {
+      margin: 0;
+    }
+    &__text {
+      &-subtitle {
+        padding: 0 100px;
+      }
+    }
+    &__images {
+      width: auto;
+      margin-left: 25%;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+}
+
+@media (max-width: 1250px) {
+  .login {
+  }
+  .left {
+    &__fields {
+      & input {
+        padding: 0 57px;
+      }
+    }
+    &__signup {
+      &-button {
+        width: 418px;
+      }
+    }
+  }
+  .right {
+    &__images {
+      margin-left: 15%;
+    }
+    &__card {
+      margin-right: 40px;
+    }
+  }
+  #plate {
+    width: 350px;
+  }
+}
+@media (max-width: 1050px) {
+  .left {
+    &__password {
+      & img {
+        right: 6%;
+      }
+    }
+    &__fields {
+      & input {
+        width: 280px;
+        padding: 0 47px;
+      }
+    }
+    &__signup {
+      &-button {
+        width: 376px;
+      }
+    }
+  }
+  .right {
+    &__text {
+      &-subtitle {
+        padding: 0px 80px;
+      }
+    }
+  }
+
+  #passwordPic {
+    left: 4%;
+  }
+  #emailPic {
+    left: 4%;
+  }
+  #namePic {
+    left: 4%;
+  }
+}
+@media (max-width: 1000px) {
+  .right {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+}
+@media (max-width: 500px) {
+  .left {
+    padding: 80px 0;
+    &__socials {
+      width: 330px;
+    }
+    &__fields {
+      & input {
+        width: 220px;
+      }
+    }
+    &__signup {
+      &-button {
+        width: 316px;
+      }
+    }
+  }
 }

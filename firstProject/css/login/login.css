@@ -217,6 +217,16 @@ purple {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .left {
@@ -299,6 +309,9 @@ purple {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .left__fields input {
   width: 302px;
@@ -429,4 +442,80 @@ purple {
 
 .hide {
   display: none;
+}
+
+@media (max-width: 1700px) {
+  .left {
+    padding: 150px 9% 0 9%;
+  }
+  .right__card {
+    margin: 0;
+  }
+  .right__text-subtitle {
+    padding: 0 100px;
+  }
+  .right__images {
+    width: auto;
+    margin-left: 25%;
+  }
+}
+@media (max-width: 1250px) {
+  .left__fields input {
+    padding: 0 57px;
+  }
+  .left__signup-button {
+    width: 418px;
+  }
+  .right__images {
+    margin-left: 15%;
+  }
+  .right__card {
+    margin-right: 40px;
+  }
+  #plate {
+    width: 350px;
+  }
+}
+@media (max-width: 1050px) {
+  .left__password img {
+    right: 6%;
+  }
+  .left__fields input {
+    width: 280px;
+    padding: 0 47px;
+  }
+  .left__signup-button {
+    width: 376px;
+  }
+  .right__text-subtitle {
+    padding: 0px 80px;
+  }
+  #passwordPic {
+    left: 4%;
+  }
+  #emailPic {
+    left: 4%;
+  }
+  #namePic {
+    left: 4%;
+  }
+}
+@media (max-width: 1000px) {
+  .right {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .left {
+    padding: 80px 0;
+  }
+  .left__socials {
+    width: 330px;
+  }
+  .left__fields input {
+    width: 220px;
+  }
+  .left__signup-button {
+    width: 316px;
+  }
 }
