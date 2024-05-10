@@ -683,6 +683,7 @@ purple {
       top: 0;
       width: 200px;
       transition: transform 0.5s;
+      transform: translateX(100%);
       &-buttons {
         flex-direction: column;
         gap: 50px;
@@ -692,7 +693,6 @@ purple {
         font-size: 26px;
         background-color: rgb(243, 243, 243);
         border: 1px solid;
-        transform: translateX(100%);
       }
     }
     &__registration {
@@ -708,10 +708,10 @@ purple {
     }
 
     &.open &__navigation {
-      transform: translateX(-100%);
+      transform: translateX(0);
     }
     &.open &__registration {
-      transform: translateX(0%);
+      transform: translateX(0);
     }
   }
 }

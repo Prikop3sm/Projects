@@ -1236,7 +1236,7 @@ purple {
 
 @media (max-width: 1450px) {
   .application__right-card {
-    right: -100px;
+    left: 0px;
   }
 }
 @media (max-width: 1250px) {
@@ -1273,14 +1273,8 @@ purple {
   .restaurants__list-item {
     width: 330px;
   }
-  .customer__content-list {
-    overflow: scroll;
-  }
   .favorite {
     left: 140px;
-  }
-  .slider__form {
-    display: none;
   }
   .item__header-quote {
     margin: 0;
@@ -1394,6 +1388,12 @@ purple {
     width: 25%;
     top: 120px;
   }
+  .customer__content-list {
+    overflow: scroll;
+  }
+  .slider__form {
+    display: none;
+  }
 }
 @media (max-width: 700px) {
   .application__inner {
@@ -1433,7 +1433,7 @@ purple {
     line-height: 40px;
   }
   .mobile__right-list {
-    font-size: 13px;
+    font-size: 16px;
     gap: 10px;
   }
   .mobile__right-more-vector {
@@ -1461,6 +1461,9 @@ purple {
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
   }
   .header__navigation-buttons {
     -webkit-box-orient: vertical;
@@ -1473,9 +1476,6 @@ purple {
     font-size: 26px;
     background-color: rgb(243, 243, 243);
     border: 1px solid;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
   }
   .header__registration {
     position: absolute;
@@ -1494,14 +1494,14 @@ purple {
     display: block;
   }
   .header.open .header__navigation {
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
   .header.open .header__registration {
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (max-width: 500px) {
@@ -1580,7 +1580,7 @@ purple {
     padding: 20px;
   }
   .subscribe__content-text {
-    font-size: 40px;
+    font-size: 38px;
   }
   .subscribe__input-wrapper input {
     width: 120px;

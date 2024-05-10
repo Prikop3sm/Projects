@@ -33,7 +33,7 @@ function sliderMover(event) {
   slider.style.left = sliderLeft + "px";
 
   items.forEach((item) => {
-    item.style.right = sliderLeft * 5.6 + "px";
+    item.style.right = sliderLeft * (items[0].offsetWidth / 95) + "px";
   });
 }
 

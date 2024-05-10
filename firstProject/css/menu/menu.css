@@ -968,6 +968,9 @@ purple {
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
   }
   .header__navigation-buttons {
     -webkit-box-orient: vertical;
@@ -980,9 +983,6 @@ purple {
     font-size: 26px;
     background-color: rgb(243, 243, 243);
     border: 1px solid;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
   }
   .header__registration {
     position: absolute;
@@ -1001,14 +1001,14 @@ purple {
     display: block;
   }
   .header.open .header__navigation {
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
   .header.open .header__registration {
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (max-width: 500px) {
@@ -1024,5 +1024,13 @@ purple {
   }
   .dishes__title {
     line-height: 37px;
+  }
+  .weekend__inner {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .weekend__price-options li {
+    padding: 0 10px;
   }
 }
